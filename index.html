@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Todo</title>
+</head>
+<body>
+    <div class="container main">
+    <div class="container z-depth-1">
+        <div class="row">
+                <div class="col s8 offset-s2"> 
+        <h1 class="center "><i class="fas fa-pen"></i> todo</h1>
+        <div class="input-field">
+            <input type="text" id="search" class="search">
+            <label for="search">Search</label>
+        </div>
+        <div class="container-collection">
+            <ul class="collection todos">
+                <li class="collection-item red lighten-4">
+                    <span class="checked">Finish new website</span> 
+                    <i class="far fa-trash-alt right delete"></i>
+                    <i class="far fa-check-circle right check"></i>
+                </li>
+                    <li class="collection-item teal lighten-4">
+                    <span>Get flowers for mom</span>  
+                    <i class="far fa-trash-alt right delete"></i>
+                    <i class="far fa-check-circle right check"></i>
+                </li>
+                <li class="collection-item teal lighten-4">
+                    <span>Book flight to San Francisco</span>  
+                    <i class="far fa-trash-alt right delete"></i>
+                    <i class="far fa-check-circle right check"></i>
+                </li>
+            </ul>
+        </div>
+        <form class="add" onsubmit="">
+            <div class="input-field">
+                <input type="text" id="todo">
+                <label for="todo">Add todo</label>
+            </div>
+            <div class="center">
+            <button class="btn orange lighten-3">Submit</button></div>
+        </form>
+        </div>
+    </div>
+</div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
